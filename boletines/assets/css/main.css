@@ -1,0 +1,197 @@
+/*
+
+#F2668B fusion red
+#3F7C85 azul 
+#00CCBF celeste
+#72F2EB turquesa
+#747E7E gris
+*/
+
+
+html {
+    font-family: 'Nunito', sans-serif;
+    /* Default font */
+
+}
+
+a {
+    color: fuchsia;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    opacity: 0.8;
+    /* hover es el estado de los links. de esta manera se cambia la opacidad cuando se pasa el mouse por arriba */
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+
+}
+
+.table td,
+.table th {
+    padding: 1em;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgb(223, 230, 227);
+}
+
+/* sirve para elegir el elemento a colorear*/
+.container {
+    background: #642B73;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    /* Define maximum width */
+    max-width: 960px;
+    /* Define maximum height */
+    height: 80vh;
+    /* Set width to 100% of parent */
+    width: 100%;
+    /* Set height to 100% of parent */
+    height: 100%;
+    /* Set background color */
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+
+    overflow: scroll;
+
+}
+
+.content {
+    padding: 1em;
+}
+
+td {
+    display: block;
+    width: 100%;
+}
+
+td:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: fuchsia;
+}
+
+th {
+    display: none;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    text-decoration: none;
+    /*quita subrayado de la X*/
+    border-radius: 50%;
+    /* redondea el contenedor para la x*/
+    background-color: #C6426E;
+    display: inline-block;
+    font-weight: 300;
+    /* estas 3 reglas posicionan la x en el centro del circulo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /*cambia el cursor por una manito para hacer click*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /* agrega una sombra*/
+}
+
+.title-item {
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #642B73;
+    padding: 1em;*/
+    font-size: 2em;
+    border-bottom: solid 2px fuchsia;
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+.address {
+    font-weight: bold;
+    color: fuchsia;
+    font-size: 1.2em;
+}
+
+.main-image {
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.position {
+    background-color: orange;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.9em;
+
+}
+
+
+@media (min-height:550px) {
+    .content {
+        height: 500px;
+    }
+}
+
+@media (min-width:900px) {
+    th {
+        display: table-cell;
+    }
+
+    td {
+        width: auto;
+
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+
+    
+
+}
